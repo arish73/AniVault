@@ -6,7 +6,8 @@ const BrowseManga = () => {
     return (
       <div>
         <Navbar/>
-        <BrowseContent />
+        <BrowseContent type="MANGA" />
+
 
       </div>
     );
