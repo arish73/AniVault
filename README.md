@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![alt text](image.png)
+
+# AniVault - Anime and Manga Tracker
+
+AniVault is a web application for tracking your favorite anime and manga. Built with Next.js, it leverages the AniList GraphQL API to fetch data, uses Supabase for a PostgreSQL database, and integrates Clerk for seamless authentication. The app is styled with Tailwind CSS for a modern and responsive design.
+
+## Features
+
+- **Track Anime and Manga:** Search, add, and manage your favorite anime and manga.
+- **Detailed Information:** Fetch data like ratings, descriptions, and more from the AniList API.
+- **User Authentication:** Secure user accounts with Clerk.
+- **Custom Lists:** Create and organize custom lists of anime and manga.
+- **Responsive Design:** Optimized for all devices using Tailwind CSS.
+- **Real-time Updates:** Leverages Supabase to provide a responsive and real-time experience.
+
+## Tech Stack
+
+- **Framework:** [Next.js](https://nextjs.org/) - A React framework for server-side rendering and static site generation.
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework for rapid UI development.
+- **Database:** [Supabase](https://supabase.com/) - A hosted PostgreSQL database with real-time capabilities.
+- **Authentication:** [Clerk](https://clerk.dev/) - A plug-and-play user management system.
+- **API:** [AniList GraphQL API](https://anilist.co/) - A comprehensive API for anime and manga data.
 
 ## Getting Started
 
-First, run the development server:
+To get started with AniVault, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. **Clone the repository:**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+   ```bash
+   git clone git@github.com:arish73/AniVault.git
+   cd AniVault
+   ```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+2. **Install dependencies:**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-## Learn More
+3. **Create environment variables:**
 
-To learn more about Next.js, take a look at the following resources:
+   - Create a `.env.local` file in the root directory.
+   - Add your environment variables for Supabase, Clerk, and AniList API keys:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+   CLERK_FRONTEND_API=your_clerk_frontend_api
+   ANILIST_API_KEY=your_anilist_api_key
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+4. **Run the development server:**
 
-## Deploy on Vercel
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   Open [http://localhost:3000](http://localhost:3000) with your browser to see the app.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Deployment
+
+You can deploy this Next.js app using [Vercel](https://vercel.com/), the creators of Next.js. For more details on deploying, refer to the [Next.js deployment documentation](https://nextjs.org/docs/deployment).
+
+## Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Contact
+
+If you have any questions or suggestions, feel free to reach out at [your-email@example.com](mailto:your-email@example.com).
+
+
+
